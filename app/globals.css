@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-charcoal: #0a0a0b;
+  --color-charcoal-2: #101012;
+  --color-offwhite: #f2f2ed;
+  --color-phosphor: #00e68c;
+  --color-amber: #ffb020;
+
+  --color-background: #0a0a0b;
+  --color-foreground: #f2f2ed;
+  --color-muted: #6b6b66;
+  --color-border: rgba(242, 242, 237, 0.08);
+
+  --font-display: var(--font-anton), 'Arial Narrow', sans-serif;
+  --font-condensed: var(--font-oswald), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Grid + noise overlay */
+.bg-grid {
+  background-image: linear-gradient(rgba(242, 242, 237, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(242, 242, 237, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 768px) {
+  * {
+    cursor: none;
+  }
+}
+
+::selection {
+  background: var(--color-phosphor);
+  color: var(--color-charcoal);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px var(--color-offwhite);
+  color: transparent;
+}
+
+.text-stroke-phosphor {
+  -webkit-text-stroke: 1px var(--color-phosphor);
+  color: transparent;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
