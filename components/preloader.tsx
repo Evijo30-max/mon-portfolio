@@ -31,7 +31,7 @@ export function Preloader({ onDone }: { onDone: () => void }) {
           className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-charcoal"
           exit={{
             clipPath: 'inset(0 0 100% 0)',
-            transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
+            transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
           }}
         >
           <div className="w-[min(560px,80vw)]">
@@ -49,7 +49,7 @@ export function Preloader({ onDone }: { onDone: () => void }) {
             </svg>
             <div className="mt-6 flex items-end justify-between font-mono">
               <span className="text-xs uppercase tracking-[0.3em] text-muted">
-                signal_acquisition
+                connexion à la vie d'Evijo30
               </span>
               <span className="font-display text-5xl tabular-nums text-offwhite md:text-7xl">
                 {String(count).padStart(3, '0')}

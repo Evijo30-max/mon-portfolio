@@ -23,7 +23,7 @@ export function About() {
           <div className="relative aspect-[4/5] overflow-hidden border border-border">
             <motion.div style={{ y }} className="absolute inset-0 scale-110">
               <Image
-                src="/portrait.png"
+                src="/portraitMe.jpeg"
                 alt="Portrait de l'étudiant ingénieur télécom et développeur"
                 fill
                 className="object-cover grayscale transition-all duration-700 hover:grayscale-0"
@@ -32,7 +32,7 @@ export function About() {
             </motion.div>
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
             <div className="absolute bottom-4 left-4 font-mono text-[10px] uppercase tracking-[0.3em] text-phosphor">
-              [ operator_online ]
+              [ Eric Evina M. ]
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export function About() {
         <div className="flex flex-col justify-center md:col-span-7">
           <Reveal>
             <p className="text-2xl font-light leading-snug text-offwhite md:text-4xl">
-              Je suis un élève ingénieur en télécommunications, passionné par tout ce qui
+              Je suis un élève ingénieur en télécommunications (Informatique des Réseaux), passionné par tout ce qui
               transporte l&apos;information — des <span className="text-phosphor">protocoles réseau</span> aux{' '}
               <span className="text-amber">interfaces web</span>.
             </p>
@@ -56,7 +56,7 @@ export function About() {
 
           <div className="mt-12 grid grid-cols-2 gap-8 border-t border-border pt-8 sm:grid-cols-4">
             {[
-              { k: '1', v: 'ans de code' },
+              { k: '19', v: 'ans' },
               { k: '8', v: 'projets' },
               { k: '2', v: 'certifications' },
               { k: '∞', v: 'curiosité' },

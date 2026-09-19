@@ -29,7 +29,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'RESO — Élève Ingénieur Télécom & Développeur',
+  title: 'ERIC EVINA M. — Élève Ingénieur Télécom & Développeur',
   description:
     'Portfolio d\'un élève ingénieur télécom et jeune développeur. Réseaux, code, systèmes. Un terminal réseau vivant.',
   generator: 'v0.app',

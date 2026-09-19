@@ -11,11 +11,18 @@ export const MARQUEE_WORDS = [
   'RÉSEAUX',
   'CODE',
   'TÉLÉCOM',
+  'APPLE',
   'DEV',
+  'CONSOLE',
+  'JAVA',
   'CISCO',
   'LINUX',
   'PYTHON',
   'PROTOCOLES',
+  'ECHECS',
+  'JAVASCRIPT',
+  'DAMES',
+  'ENTREPRENEURIAT',
 ]
 
 export type SkillNode = {
@@ -46,9 +53,10 @@ export const TECH_STACK = [
   { cmd: 'cat /etc/network', out: 'Cisco · Juniper · pfSense · Wireshark' },
   { cmd: 'python3 --version', out: 'Python 3.12 · Flask · Scapy · Ansible' },
   { cmd: 'node --version', out: 'Node 22 · Next.js · TypeScript · React' },
-  { cmd: 'uname -a', out: 'Debian · Arch · Ubuntu Server · WSL2' },
+  { cmd: 'kali[]linux -a', out: 'Debian · Arch · Ubuntu Server · WSL2' },
   { cmd: 'docker ps', out: 'Docker · Compose · Proxmox · VMware' },
   { cmd: 'git config user', out: 'Git · GitHub Actions · CI/CD' },
+  { cmd: 'cat/simple/web', out: 'Html5 · CSS3 · JS · PHP' },
 ]
 
 export type Project = {
@@ -65,7 +73,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'netmon',
     title: 'NetPulse',
-    year: '2025',
+    year: 'ongoing',
     category: 'Supervision réseau',
     description:
       'Outil de supervision temps réel qui cartographie la topologie et visualise le flux de paquets nœud par nœud.',
@@ -75,7 +83,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'vpn',
     title: 'TunnelForge',
-    year: '2025',
+    year: 'ongoing',
     category: 'Sécurité',
     description:
       'Générateur et gestionnaire de tunnels VPN WireGuard avec rotation de clés et interface de contrôle.',
@@ -85,7 +93,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'iot',
     title: 'MeshSense',
-    year: '2024',
+    year: 'ongoing',
     category: 'IoT / Edge',
     description:
       'Réseau maillé de capteurs sur Raspberry Pi remontant la télémétrie via MQTT vers un dashboard live.',
@@ -95,7 +103,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'dash',
     title: 'GridBoard',
-    year: '2024',
+    year: 'ongoing',
     category: 'Web App',
     description:
       'Tableau de bord analytique modulaire avec widgets temps réel et thème terminal entièrement personnalisable.',
@@ -105,7 +113,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'cli',
     title: 'netcli',
-    year: '2023',
+    year: 'ongoing',
     category: 'Outil dev',
     description:
       'CLI d\'automatisation réseau : audit de configuration, sauvegarde et déploiement massif d\'équipements.',
@@ -122,20 +130,42 @@ export const PROJECTS: Project[] = [
     tags: ['Proxmox', 'BGP', 'Docker', 'Ansible'],
     image: '/project-lab.png',
   },
+  {
+    id: 'shop',
+    title: 'DailyMobile',
+    year: 'ongoing',
+    category: 'shop',
+    description:
+      'Boutique online pour particulier : Commande, Répération, DNS auto-hébergé et CI/CD complet.',
+    tags: ['DJANGO', 'NODE', 'Docker', 'PostgreSQL'],
+    image: '/project-lab.png',
+  },
 ]
 
 export const TIMELINE = [
   {
-    year: '2025',
+    year: '2026',
     title: 'Stage — Ingénierie réseau',
-    place: 'Opérateur télécom',
-    text: 'Déploiement et supervision d\'infrastructures fibre, automatisation des configurations.',
+    place: 'Cameroon Telecommunications - CAMTEL',
+    text: 'Conception et Développement d\'une plateforme web d\'optimisation des ressources énergétiques et d\'une plateformes de recouvrement des créances.',
+  },
+  {
+    year: '2025',
+    title: 'Stage — Mécanique',
+    place: 'Mbaho Automobile SARL',
+    text: 'Mécanique de base',
+  },
+  {
+    year: '2024-2026',
+    title: 'Cycle Ingénieur des Travaux des Télécommunications',
+    place: 'École nationale supérieur des postes, des télécommunications et des technologies de l\'informations et de la communications - SUP\'PTIC',
+    text: 'Deux premières années de familiarisations et d\'études globales des télécommunications.',
   },
   {
     year: '2024',
-    title: 'Cycle Ingénieur Télécom',
-    place: 'École d\'ingénieurs',
-    text: 'Spécialisation réseaux, systèmes distribués et cybersécurité.',
+    title: 'Fin de formation secondaire',
+    place:'Cameroun',
+    text: 'Système éducatif Camerounais',
   },
   {
     year: '2023',
@@ -149,28 +179,58 @@ export const TIMELINE = [
     place: 'Autodidacte',
     text: 'Découverte de Python et du web, premiers scripts d\'automatisation.',
   },
+  {
+    year: '2017',
+    title: 'Fin de formation primaire et maternelle',
+    place:'Cameroun / CSPLB "les coccinelles" International',
+    text: 'Système éducatif français... Malheureusement j\'ai aussi due vivre le décès de ms mère cette année',
+  },
+  {
+    year: '2007',
+    title: 'Naissance du prodige',
+    place:'Cameroun',
+    text: 'Enfant au destin sûrement prometteur',
+  },
 ]
 
 export const EDUCATION = [
   {
-    school: 'École d\'Ingénieurs',
-    degree: 'Cycle Ingénieur — Télécommunications & Réseaux',
-    period: '2023 — 2026',
-    detail: 'Réseaux, systèmes, signal, cybersécurité et développement logiciel.',
+    school: 'École nationale supérieur des postes, des télécommunications et des technologies de l\'informations et de la communications - SUP\'PTIC',
+    degree: 'Cycle Ingénieur des Travaux des Télécommunications  "Informatique des Réseaux"',
+    period: '2024 — En cours',
+    detail: 'Réseaux, systèmes, signal, protocoles et développement logiciel.',
   },
   {
-    school: 'Classes préparatoires',
-    degree: 'CPGE — Mathématiques & Physique',
-    period: '2021 — 2023',
-    detail: 'Fondations scientifiques solides, rigueur analytique et algorithmique.',
+    school: 'Lycée classique d\'Abong-mbang',
+    degree: 'BACCALAUREAT "C" — Mathématiques, Physique, Chimie & Informatique',
+    period: '2024',
+    detail: 'Fondations scientifiques solides',
   },
+  {
+    school: 'Lycée classique d\'Abong-mbang',
+    degree: 'PROBATOIRE "C" — Mathématiques, Physique, Chimie & Informatique',
+    period: '2023',
+    detail: 'rigueur analytique et algorithmique',
+  },
+  {
+    school: 'Lycée classique d\'Abong-mbang',
+    degree: 'BEPC — chinois/latin',
+    period: '2021',
+    detail: 'Brevet d\'Etude du Premier Cycle... 2eme langue = CHINOIS & LATIN',
+  },
+  {
+    school: 'Complexe Scolaire Internationnal Privé Laïc Bilingue "les COCCINELLES"',
+    degree: 'CEP',
+    period: '2023',
+    detail: 'Certificat d\'Etudes Primaires',
+  }
 ]
 
 export const GITHUB_STATS = [
-  { label: 'Repositories', value: 48 },
-  { label: 'Commits (an)', value: 1240 },
-  { label: 'Stars', value: 96 },
-  { label: 'Pull Requests', value: 210 },
+  { label: 'Repositories', value: 7 },
+  { label: 'Commits (an)', value: 43 },
+  { label: 'Stars', value: 2 },
+  { label: 'Pull Requests', value: 1 },
 ]
 
 export const LAB_ITEMS = [
@@ -204,21 +264,33 @@ export const SERVICES = [
 export const TESTIMONIALS = [
   {
     quote:
-      'Rigoureux et curieux, il comprend aussi bien la couche réseau que le code applicatif. Rare et précieux.',
-    author: 'Tuteur de stage',
-    role: 'Ingénieur réseau senior',
+      'Rigoureux et curieux, il comprend et assimile vite le problème et propose un correctif viable. Rare et précieux.',
+    author: 'NGAHIBI ABBE Alain Didier ',
+    role: 'Tuteur de stage & Ingénieur de conception des Télécommunications',
   },
   {
     quote:
       'Une capacité d\'automatisation impressionnante. Il transforme les corvées en scripts élégants.',
-    author: 'Chef de projet',
-    role: 'Association étudiante',
+    author: 'NJIMONGBA Abdoul Rahim',
+    role: 'Chef de projet - Club Informatique Sup\'ptic',
   },
   {
     quote:
       'Autonome, méthodique et toujours prêt à creuser un protocole jusqu\'au bout.',
-    author: 'Professeur référent',
-    role: 'École d\'ingénieurs',
+    author: 'Mr SASSA Therence',
+    role: 'Enseignant SUP\'PTIC',
+  },
+  {
+    quote:
+      'Perséverant, Rigoureux, Intellectuellement assis, il va au bout des choses et de lâches rien lorsqu\'il croit tenir une mine d\'or dans la main',
+    author: 'Mlle NJANTOU MBAHO Marie Juliette',
+    role: 'Conseillère & actionnaire "QG Bar"',
+  },
+  {
+    quote:
+      'Attentif, Toujours prêt à apprendre',
+    author: 'Mr MBAHO Lezin Gilbert',
+    role: 'PDG Mbaho Automobile',
   },
 ]
 
@@ -229,17 +301,18 @@ export const POSTS = [
 ]
 
 export const CERTS = [
-  { name: 'CCNA', org: 'Cisco', status: 'Certifié' },
-  { name: 'Linux Essentials', org: 'LPI', status: 'Certifié' },
+  { name: 'CCNA-Datacom', org: 'Cisco', status: 'En cours' },
+  { name: 'CCNA-Wlan', org: 'Cisco', status: 'En cours' },
+  { name: 'Linux Essentials', org: 'LPI', status: 'En cours' },
   { name: 'Network+', org: 'CompTIA', status: 'En cours' },
-  { name: 'Python (PCAP)', org: 'OpenEDG', status: 'Certifié' },
+  { name: 'Python (PCAP)', org: 'OpenEDG', status: 'En cours' },
   { name: 'AWS Cloud', org: 'Amazon', status: 'En cours' },
-  { name: 'Security+', org: 'CompTIA', status: 'Visé' },
+  { name: 'Security+', org: 'CompTIA', status: 'En cours' },
 ]
 
 export const SOCIALS = [
-  { label: 'GitHub', href: '#' },
-  { label: 'LinkedIn', href: '#' },
-  { label: 'Email', href: 'mailto:hello@reso.dev' },
+  { label: 'GitHub', href: 'https://github.com/Evijo30-max/' },
+  { label: 'LinkedIn', href: 'https://linkedin/' },
+  { label: 'Email', href: 'mailto:evijoevijo371@gmail.com   ' },
   { label: 'Twitter', href: '#' },
 ]

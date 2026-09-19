@@ -51,7 +51,7 @@ export function WritingCerts() {
             </div>
             <div className="space-y-8">
               {EDUCATION.map((edu, i) => (
-                <Reveal key={edu.school} delay={i * 0.1}>
+                <Reveal key={edu.school} delay={i * 0.2}>
                   <div className="flex flex-col gap-1 border-l-2 border-phosphor/40 pl-5">
                     <span className="font-mono text-xs text-amber">{edu.period}</span>
                     <h4 className="font-condensed text-lg uppercase tracking-wide text-offwhite">

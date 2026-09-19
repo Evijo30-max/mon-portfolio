@@ -33,11 +33,11 @@ export function Contact() {
         <div className="mt-14 flex flex-col items-center gap-8">
           <Magnetic strength={0.5}>
             <a
-              href="mailto:hello@reso.dev"
+              href="mailto:evijoevijo371@gmail.com"
               data-cursor="envoyer"
               className="group relative flex items-center gap-3 rounded-full bg-phosphor px-10 py-5 font-mono text-sm uppercase tracking-widest text-charcoal transition-shadow duration-300 hover:shadow-[0_0_40px_rgba(0,230,140,0.5)]"
             >
-              hello@reso.dev
+              evijoevijo371@gmail.com
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
           </Magnetic>

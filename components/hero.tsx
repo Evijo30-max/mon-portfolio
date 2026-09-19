@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'motion/react'
 import { ParticleNetwork } from './particle-network'
 
-const NAME = 'RÉSEAU'
+const NAME = 'ERIC..EVINA MBAHO'
 const ROLE = 'Élève Ingénieur Télécom & Développeur'
 
 function TypeLine({ start }: { start: boolean }) {
@@ -48,7 +48,7 @@ export function Hero({ ready }: { ready: boolean }) {
         </div>
 
         <h1 className="font-display text-[clamp(3.5rem,17vw,15rem)] uppercase leading-[0.8] tracking-tight text-offwhite">
-          <span className="sr-only">{NAME} — jeune développeur réseaux</span>
+          <span className="sr-only">{NAME} — élève ingénieur des travaux de télécommunications & développeur réseaux</span>
           <span aria-hidden="true" className="flex flex-wrap">
             {NAME.split('').map((char, i) => (
               <motion.span
@@ -100,7 +100,7 @@ export function Hero({ ready }: { ready: boolean }) {
             className="max-w-xs text-sm leading-relaxed text-muted"
           >
             Je construis des réseaux fiables et des interfaces vivantes. Entre la couche
-            physique et le pixel, tout est signal.
+            physique et l'application, tout est signal.
           </motion.p>
         </div>
       </div>

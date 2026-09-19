@@ -8,7 +8,7 @@ import { SectionHeading } from './section-heading'
 const GROUP_LABEL: Record<string, string> = {
   network: 'Réseaux',
   code: 'Développement',
-  systems: 'Systèmes',
+  systems: 'Outils & Systèmes',
 }
 
 const GROUP_COLOR: Record<string, string> = {

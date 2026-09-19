@@ -16,7 +16,7 @@ export function Nav() {
             data-cursor="top"
             className="font-display text-xl uppercase tracking-tight text-white"
           >
-            RESO<span className="text-phosphor">.</span>
+            Evijo 30<span className="text-phosphor">.</span>
           </a>
           <button
             onClick={() => setOpen((v) => !v)}

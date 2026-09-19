@@ -11,7 +11,7 @@ export function TechStack() {
           <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
           <span className="h-3 w-3 rounded-full bg-amber" />
           <span className="h-3 w-3 rounded-full bg-phosphor" />
-          <span className="ml-3 font-mono text-xs text-muted">reso@homelab: ~/stack</span>
+          <span className="ml-3 font-mono text-xs text-muted">Evijo30@homelab: ~/stack</span>
         </div>
         <div className="space-y-3 p-5 font-mono text-sm md:p-8">
           {TECH_STACK.map((line, i) => (
