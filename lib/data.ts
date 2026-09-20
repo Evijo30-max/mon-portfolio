@@ -2,9 +2,10 @@ export const NAV_LINKS = [
   { label: 'À propos', href: '#about', index: '01' },
   { label: 'Compétences', href: '#skills', index: '02' },
   { label: 'Projets', href: '#projects', index: '03' },
-  { label: 'Parcours', href: '#timeline', index: '04' },
-  { label: 'Lab', href: '#lab', index: '05' },
-  { label: 'Contact', href: '#contact', index: '06' },
+  { label: 'Collaborations', href: '#collab', index: '04' },
+  { label: 'Parcours', href: '#timeline', index: '05' },
+  { label: 'Lab', href: '#lab', index: '06' },
+  { label: 'Contact', href: '#contact', index: '067' },
 ]
 
 export const MARQUEE_WORDS = [
@@ -141,6 +142,51 @@ export const PROJECTS: Project[] = [
     image: '/project-lab.png',
   },
 ]
+
+export type Collab = {
+  id: string
+  title: string
+  year: string
+  category: string
+  description: string
+  tags: string[]
+  image: string
+}
+
+export const COLLAB: Collab[] = [
+  {
+    id: 'carburflow',
+    title: 'Carburflow',
+    year: '2026',
+    category: 'Supervision et audit de carburant',
+    description:
+      'Outil de supervision temps réel qui cartographie les actions liées et visualise le flux de carburant de Camtel site par site.',
+    tags: ['Python', 'Docker', 'React', 'PostgreSQL'],
+    image: '/project-network-monitor.png',
+  },
+  {
+    id: 'gbl',
+    title: 'GBLrecover',
+    year: 'ongoing',
+    category: 'Audit finance',
+    description:
+      'gestionnaire de portefeuille, créances avec interface de contrôle et d\'audit.',
+    tags: ['FastAPI', 'PostgreSQL', 'Docker', 'CLI'],
+    image: '/project-vpn.png',
+  },
+  {
+    id: 'clubinfo',
+    title: 'ClubInfo',
+    year: '2026',
+    category: 'WEB',
+    description:
+      'Site vitrine du club Informatique de Supptic',
+    tags: ['Supabase', 'TypeScript', 'Vercel',],
+    image: '/project-iot.png',
+  },
+]
+
+
 
 export const TIMELINE = [
   {

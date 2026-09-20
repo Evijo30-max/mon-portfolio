@@ -7,7 +7,7 @@ import { SectionHeading } from './section-heading'
 export function Services() {
   return (
     <section className="relative mx-auto max-w-[1600px] px-6 py-24 md:px-12 md:py-40">
-      <SectionHeading index="06" label="Comment je peux aider" title="Services" />
+      <SectionHeading index="07" label="Comment je peux aider" title="Services" />
 
       <div className="grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-3">
         {SERVICES.map((service, i) => (

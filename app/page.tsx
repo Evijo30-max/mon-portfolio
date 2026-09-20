@@ -11,6 +11,7 @@ import { About } from '@/components/about'
 import { SkillsMatrix } from '@/components/skills-matrix'
 import { TechStack } from '@/components/tech-stack'
 import { Projects } from '@/components/projects'
+import { Collab } from '@/components/collab'
 import { GithubStats } from '@/components/github-stats'
 import { Timeline } from '@/components/timeline'
 import { Lab } from '@/components/lab'
@@ -36,6 +37,7 @@ export default function Home() {
         <SkillsMatrix />
         <TechStack />
         <Projects />
+        <Collab />
         <GithubStats />
         <Timeline />
         <Lab />

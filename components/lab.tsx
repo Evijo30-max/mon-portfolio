@@ -7,7 +7,7 @@ import { SectionHeading } from './section-heading'
 export function Lab() {
   return (
     <section id="lab" className="relative mx-auto max-w-[1600px] px-6 py-24 md:px-12 md:py-40">
-      <SectionHeading index="05" label="Expérimentations" title="Le Lab" />
+      <SectionHeading index="06" label="Expérimentations" title="Le Lab" />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {LAB_ITEMS.map((item, i) => (

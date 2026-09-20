@@ -15,7 +15,7 @@ export function Timeline() {
 
   return (
     <section id="timeline" className="relative mx-auto max-w-[1600px] px-6 py-24 md:px-12 md:py-40">
-      <SectionHeading index="04" label="Le chemin parcouru" title="Parcours" />
+      <SectionHeading index="05" label="Le chemin parcouru" title="Parcours" />
 
       <div ref={ref} className="relative pl-8 md:pl-0">
         {/* center line */}

@@ -11,7 +11,7 @@ export function WritingCerts() {
         {/* Writing */}
         <div>
           <div className="mb-10 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-phosphor">
-            <span className="text-amber">07</span>
+            <span className="text-amber">08</span>
             <span className="h-px w-8 bg-phosphor/50" />
             <span className="text-muted">Notes & articles</span>
           </div>
@@ -69,7 +69,7 @@ export function WritingCerts() {
         {/* Certifications */}
         <div>
           <div className="mb-10 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-phosphor">
-            <span className="text-amber">08</span>
+            <span className="text-amber">09</span>
             <span className="h-px w-8 bg-phosphor/50" />
             <span className="text-muted">Certifications</span>
           </div>

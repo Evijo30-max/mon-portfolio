@@ -3,25 +3,25 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { PROJECTS } from '@/lib/data'
+import { COLLAB } from '@/lib/data'
 import { SectionHeading } from './section-heading'
 
-export function Projects() {
+export function Collab() {
   const [hovered, setHovered] = useState<string | null>(null)
 
   return (
-    <section id="projects" className="relative mx-auto max-w-[1600px] px-6 py-24 md:px-12 md:py-40">
-      <SectionHeading index="03" label="Mes propres défis et tâches dont je suis le garant" title="Projets" />
+    <section id="collab" className="relative mx-auto max-w-[1600px] px-6 py-24 md:px-12 md:py-40">
+      <SectionHeading index="04" label="Où mon expertise à été sollicité" title="Collaborations" />
 
       <div className="border-t border-border">
-        {PROJECTS.map((project, i) => {
-          const isHovered = hovered === project.id
+        {COLLAB.map((collab, i) => {
+          const isHovered = hovered === collab.id
           return (
             <motion.a
-              key={project.id}
+              key={collab.id}
               href="#contact"
               data-cursor="voir"
-              onMouseEnter={() => setHovered(project.id)}
+              onMouseEnter={() => setHovered(collab.id)}
               onMouseLeave={() => setHovered(null)}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -34,15 +34,15 @@ export function Projects() {
                   0{i + 1}
                 </span>
                 <h3 className="font-display text-3xl uppercase tracking-tight text-offwhite transition-colors duration-300 group-hover:text-phosphor sm:text-5xl md:text-7xl">
-                  {project.title}
+                  {collab.title}
                 </h3>
               </div>
 
               <div className="hidden shrink-0 flex-col items-end gap-1 text-right md:flex">
                 <span className="font-mono text-xs uppercase tracking-widest text-muted">
-                  {project.category}
+                  {collab.category}
                 </span>
-                <span className="font-mono text-xs text-amber">{project.year}</span>
+                <span className="font-mono text-xs text-amber">{collab.year}</span>
               </div>
 
               {/* floating preview */}
@@ -56,8 +56,8 @@ export function Projects() {
                     className="pointer-events-none absolute right-[18%] top-1/2 z-20 hidden aspect-[16/10] w-72 -translate-y-1/2 overflow-hidden rounded-md border border-phosphor/30 shadow-2xl lg:block"
                   >
                     <Image
-                      src={project.image || '/placeholder.svg'}
-                      alt={project.title}
+                      src={collab.image || '/placeholder.svg'}
+                      alt={collab.title}
                       fill
                       className="object-cover"
                       sizes="288px"
@@ -72,9 +72,9 @@ export function Projects() {
 
       {/* mobile tags / description grid */}
       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {PROJECTS.map((project) => (
+        {COLLAB.map((collab) => (
           <motion.div
-            key={project.id}
+            key={collab.id}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -83,8 +83,8 @@ export function Projects() {
           >
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
-                src={project.image || '/placeholder.svg'}
-                alt={project.title}
+                src={collab.image || '/placeholder.svg'}
+                alt={collab.title}
                 fill
                 className="object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -93,13 +93,13 @@ export function Projects() {
             <div className="p-5">
               <div className="flex items-center justify-between">
                 <h4 className="font-display text-xl uppercase tracking-tight text-offwhite">
-                  {project.title}
+                  {collab.title}
                 </h4>
-                <span className="font-mono text-xs text-amber">{project.year}</span>
+                <span className="font-mono text-xs text-amber">{collab.year}</span>
               </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{project.description}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{collab.description}</p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
+                {collab.tags.map((tag) => (
                   <span
                     key={tag}
                     className="rounded-full border border-border px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide text-phosphor"
